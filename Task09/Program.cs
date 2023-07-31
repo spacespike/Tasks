@@ -11,15 +11,19 @@ Console.WriteLine($"Random number from [10,99]is {number}");
 int firstDigit = number / 10;
 int secondDigit = number % 10;
 
-if (firstDigit > secondDigit)
-{
-    Console.WriteLine($"The hights is the first digit: {firstDigit}");
-}
-else if (firstDigit < secondDigit)
-{
-    Console.WriteLine($"The hights is the second digit: {secondDigit}");
-}
-else
-{
-    Console.WriteLine($"They are even {firstDigit}");
-}
+int maxDigit = firstDigit > secondDigit ? firstDigit : secondDigit;
+Console.WriteLine($"The highest digit is {maxDigit}");
+
+
+// if (firstDigit > secondDigit)
+// {
+//     Console.WriteLine($"The highest is the first digit: {firstDigit}");
+// }
+// else if (firstDigit < secondDigit)
+// {
+//     Console.WriteLine($"The highest is the second digit: {secondDigit}");
+// }
+// else
+// {
+//     Console.WriteLine($"They are even {firstDigit}");
+// } 
