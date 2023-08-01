@@ -21,6 +21,6 @@ int DeleteSecondDigit(int num)
 {
     int firstDigit = num / 100;
     int secondDigit = num % 10;
-    int result = 10 * firstDigit + secondDigit;
-    return result;
+    return 10 * firstDigit + secondDigit;
+    
 }
