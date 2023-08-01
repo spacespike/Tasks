@@ -8,11 +8,11 @@
 int number = new Random().Next(10, 100); //10 is included, 100 is not
 Console.WriteLine($"Random number from [10,99]is {number}");
 
-int firstDigit = number / 10;
-int secondDigit = number % 10;
+// int firstDigit = number / 10;
+// int secondDigit = number % 10;
 
-int maxDigit = firstDigit > secondDigit ? firstDigit : secondDigit;
-Console.WriteLine($"The highest digit is {maxDigit}");
+// int maxDigit = firstDigit > secondDigit ? firstDigit : secondDigit;
+// Console.WriteLine($"The highest digit is {maxDigit}");
 
 
 // if (firstDigit > secondDigit)
@@ -27,3 +27,13 @@ Console.WriteLine($"The highest digit is {maxDigit}");
 // {
 //     Console.WriteLine($"They are even {firstDigit}");
 // } 
+int result = MaxDigit(number);
+Console.WriteLine($"The highest digit is {result}");
+
+int MaxDigit(int num) // parameter num = number
+{
+    int firstDigit = num / 10;
+    int secondDigit = num % 10;
+    int maxDigit = firstDigit > secondDigit ? firstDigit : secondDigit;
+    return maxDigit;
+}
