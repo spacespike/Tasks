@@ -14,7 +14,7 @@ Console.WriteLine($"Your random number is {number}");
 // int result = 10 * firstDigit + secondDigit;
 // Console.WriteLine(result);
 
-int result =  DeleteSecondDigit(number);
+int result = DeleteSecondDigit(number);
 Console.WriteLine($"Ваше число: {result}");
 
 int DeleteSecondDigit(int num)
@@ -22,5 +22,5 @@ int DeleteSecondDigit(int num)
     int firstDigit = num / 100;
     int secondDigit = num % 10;
     return 10 * firstDigit + secondDigit;
-    
+
 }
