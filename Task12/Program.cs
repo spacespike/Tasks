@@ -15,7 +15,8 @@ int number2 = Convert.ToInt32(Console.ReadLine());
 int result = IsDivisible(number1, number2);
 Console.WriteLine($"The remainder is {result}");
 
-int IsDivisible(int num1, int num2) {
+int IsDivisible(int num1, int num2)
+{
     int remainder = num1 % num2;
     if (remainder == 0)
     {
