@@ -1,6 +1,7 @@
 ﻿// get the number of a weekday 
 // retuns if it is a weekend or no
 
+
 bool IsWeekend(int num)
 {
     return (num == 6 || num == 7);
