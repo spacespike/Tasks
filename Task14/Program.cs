@@ -9,7 +9,7 @@ Console.WriteLine("Write the number:");
 int number = Convert.ToInt32(Console.ReadLine());
 
 
-bool result = IsDivisible(number);
+bool result = IsDivisible(number);  //Oneline solution: Console.WriteLine(result ? "Да" : "Нет"); 
 Console.WriteLine($"The result is {result}");
 
 // bool IsDivisible(int num)
