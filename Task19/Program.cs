@@ -6,7 +6,7 @@
 
 bool IsFiveDigit(int num)
 {
-    num =Math.Abs(num);
+    num = Math.Abs(num);
     return num > 9999 && num < 100000 ? true : false;
 }
 
