@@ -6,6 +6,7 @@
 
 bool IsFiveDigit(int num)
 {
+    num =Math.Abs(num);
     return num > 9999 && num < 100000 ? true : false;
 }
 
@@ -24,7 +25,7 @@ void Palindrome(int num)
             Console.WriteLine($"{num} is a palindrome!");
         }
         else Console.WriteLine($"{num} is not a palindrome!");
-        // string result = first == fifth && second == fourth   //Pathetic efforts to use ternary operator in various scenarious
+        // string result = first == fifth && second == fourth   //Pathetic efforts ßto use ternary operator in various scenarious
         //                 ? Console.WriteLine($"{num} is a palindrome!") 
         //                 : Console.WriteLine($"{num}is not a palindrome!");
 
