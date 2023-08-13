@@ -13,7 +13,7 @@ int[] GenerateRandomArray(int size)
     int[] array = new int[size];
     Random random = new Random();
 
-    for (int i = 0; i < array.Length; i++)
+    for (int i = 0; i < size; i++)
     {
         array[i] = random.Next(2); // Генерирует случайное число 0 или 1
     }
