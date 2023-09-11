@@ -88,6 +88,5 @@ int min = Convert.ToInt32(Console.ReadLine());
 int[,] array = CreateMatrixRndInt(rows, colums, min, max);
 Console.WriteLine("Created matrix: ");
 PrintArray(array);
-Console.WriteLine("Modified matrix: ");
 int row = FindLowestSumMatrixRows(array);
 Console.WriteLine($"Lowest sum is in the {row} row.");
