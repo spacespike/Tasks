@@ -32,21 +32,20 @@ int[,,] Create3DArrayRndInt(int rows, int colums, int depth)
 }
 
 bool Array3dContains(int[,,] array3d, int randomNumber)
+{
+    for (int i = 0; i < array3d.GetLength(0); i++)
+    {
+        for (int j = 0; j < array3d.GetLength(1); j++)
         {
-            for (int i = 0; i < array3d.GetLength(0); i++)
+            for (int k = 0; k < array3d.GetLength(2); k++)
             {
-                for (int j = 0; j < array3d.GetLength(1); j++)
-                {
-                    for (int k = 0; k < array3d.GetLength(2); k++)
-                    {
-                        if (array3d[i, j, k] == randomNumber)
-                        return true;
-                    }
-                }
+                if (array3d[i, j, k] == randomNumber)
+                    return true;
             }
- 
-            return false;
         }
+    }
+    return false;
+}
 
 void PrintArray(int[,,] array3d)
 {
