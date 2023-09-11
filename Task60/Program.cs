@@ -27,7 +27,6 @@ int[,,] Create3DArrayRndInt(int rows, int colums, int depth)
             }
         }
     }
-
     return array3d;
 }
 
@@ -61,7 +60,6 @@ void PrintArray(int[,,] array3d)
         }
         Console.WriteLine("  |");
     }
-
 }
 
 
