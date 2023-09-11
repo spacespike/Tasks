@@ -11,21 +11,42 @@
 int[,,] Create3DArrayRndInt(int rows, int colums, int depth)
 {
     int[,,] array3d = new int[rows, colums, depth];
-    int temp = 9;
+    Random rnd = new Random();
     for (int i = 0; i < array3d.GetLength(0); i++) // rows
     {
         for (int j = 0; j < array3d.GetLength(1); j++) // colums
         {
             for (int k = 0; k < array3d.GetLength(2); k++) // depth
             {
-                array3d[i, j, k] = temp + 1;
-                temp++;
+                int randomNumber = rnd.Next(10, 100);
+                while (Array3dContains(array3d, randomNumber))
+                {
+                    randomNumber = rnd.Next(10, 100);
+                }
+                array3d[i, j, k] = randomNumber;
             }
         }
     }
 
     return array3d;
 }
+
+bool Array3dContains(int[,,] array3d, int randomNumber)
+        {
+            for (int i = 0; i < array3d.GetLength(0); i++)
+            {
+                for (int j = 0; j < array3d.GetLength(1); j++)
+                {
+                    for (int k = 0; k < array3d.GetLength(2); k++)
+                    {
+                        if (array3d[i, j, k] == randomNumber)
+                        return true;
+                    }
+                }
+            }
+ 
+            return false;
+        }
 
 void PrintArray(int[,,] array3d)
 {
