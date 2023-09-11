@@ -72,21 +72,31 @@ int[,] MultiplyMatrices(int[,] firstMatrix, int[,] secondMatrix)
     return newMartix;
 }
 
-Console.Write("Enter amount of rows for the matrices: ");
+Console.Write("Enter amount of rows for the first matrix: ");
 int rows = Convert.ToInt32(Console.ReadLine());
-Console.Write("Enter amount of colums for the matrices: ");
+Console.Write("Enter amount of colums for the first matrix: ");
 int colums = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("Enter max value for the matrices: ");
+Console.Write("Enter max value for the first matrix: ");
 int max = Convert.ToInt32(Console.ReadLine());
-Console.Write("Enter min value for the matrices: ");
+Console.Write("Enter min value for the first matrix: ");
 int min = Convert.ToInt32(Console.ReadLine());
 
 int[,] firstMatrix = CreateMatrixRndInt(rows, colums, min, max);
 Console.WriteLine("First created matrix: ");
 PrintArray(firstMatrix);
 
-int[,] secondMatrix = CreateMatrixRndInt(rows, colums, min, max);
+Console.Write("Enter amount of rows for the second matrix: ");
+int rows2 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Enter amount of colums for the second matrix: ");
+int colums2 = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Enter max value for the second matrix: ");
+int max2 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Enter min value for the second matrix: ");
+int min2 = Convert.ToInt32(Console.ReadLine());
+
+int[,] secondMatrix = CreateMatrixRndInt(rows2, colums2, min2, max2);
 Console.WriteLine("Second created matrix: ");
 PrintArray(secondMatrix);
 
