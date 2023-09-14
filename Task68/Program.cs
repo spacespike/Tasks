@@ -23,8 +23,16 @@ int AkkermanFunction(int m, int n)
 }
 
 
-Console.Write("Enter M: ");
+Console.Write("Enter natural number M: ");
 int m = Convert.ToInt32(Console.ReadLine());
-Console.Write("Enter N: ");
+Console.Write("Enter natural number N: ");
 int n = Convert.ToInt32(Console.ReadLine());
+
+if (m < 1 || n < 1)
+{
+    Console.WriteLine("Error! Incorrect values.");
+    return;
+}
+
+
 Console.WriteLine(AkkermanFunction(m, n));
